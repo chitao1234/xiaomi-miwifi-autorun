@@ -10,10 +10,10 @@ cd /data
 mkdir work
 cd work
 mkdir autoruns
+
 # The content here might no be up to date, be sure to check autorun.sh in the repo
 cat>autorun.sh<<EOF
 #!/bin/sh
-logger() { echo "$@"; cat < /dev/stdin; }
 BASEDIR="/data/work/autoruns"
 echo "Running $BASEDIR" | logger -t "autoruns"
 cd "$BASEDIR"
@@ -22,6 +22,8 @@ for f in `ls $BASEDIR`; do
   ./$f | logger -t "autoruns"
 done
 EOF
+
+chmod +x autorun.sh
 ```
 
 Add a custom firewall rule

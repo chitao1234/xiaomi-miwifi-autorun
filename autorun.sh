@@ -1,5 +1,4 @@
 #!/bin/sh
-logger() { echo "$@"; cat < /dev/stdin; }
 BASEDIR="/data/work/autoruns"
 echo "Running $BASEDIR" | logger -t "autoruns"
 cd "$BASEDIR"
