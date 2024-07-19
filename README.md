@@ -12,7 +12,7 @@ cd work
 mkdir autoruns
 
 # The content here might not be up to date, be sure to check autorun.sh in the repo
-cat>autorun.sh<<EOF
+cat>autorun.sh<<'EOF'
 #!/bin/sh
 BASEDIR="/data/work/autoruns"
 echo "Running $BASEDIR" | logger -t "autoruns"
