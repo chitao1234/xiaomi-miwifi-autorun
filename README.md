@@ -11,7 +11,7 @@ mkdir work
 cd work
 mkdir autoruns
 
-# The content here might no be up to date, be sure to check autorun.sh in the repo
+# The content here might not be up to date, be sure to check autorun.sh in the repo
 cat>autorun.sh<<EOF
 #!/bin/sh
 BASEDIR="/data/work/autoruns"
@@ -38,4 +38,4 @@ uci commit firewall
 
 Done. Run `fw3 reload` to check if the script has been added correctly.
 
-Check out (enable_ssh.sh)[autoruns/enable_ssh.sh] for example.
+Check out [enable_ssh.sh](autoruns/enable_ssh.sh) for example. Credit to [this post](https://www.right.com.cn/forum/forum.php?mod=viewthread&tid=8348455).
